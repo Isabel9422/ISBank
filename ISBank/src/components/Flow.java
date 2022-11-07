@@ -10,6 +10,7 @@ public abstract class Flow {
 	private Integer targetAccountNumber;
 	private Boolean effect;
 	private Date date;
+	public String type;
 
 	public Flow(String comment, String identifier, Double amount, Integer targetAccountNumber, Boolean effect, Date date) {
 		this.comment = comment;
@@ -18,6 +19,7 @@ public abstract class Flow {
 		this.targetAccountNumber = targetAccountNumber;
 		this.effect = effect;
 		this.date = date;
+		type="Flow";
 	}
 
 	public String getComment() {

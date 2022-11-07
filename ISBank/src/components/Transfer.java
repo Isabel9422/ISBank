@@ -10,6 +10,7 @@ public class Transfer extends Flow{
 			Date date, Integer accountNumber) {
 		super(comment, identifier, amount, targetAccountNumber, effect, date);
 		this.accountNumber= accountNumber;
+		type="Transfer";
 	}
 
 	public Integer getAccountNumber() {
@@ -20,11 +21,11 @@ public class Transfer extends Flow{
 		this.accountNumber = accountNumber;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "Transfer [accountNumber:" + accountNumber + ", comment:" + getComment() + ", identifier:"
-//				+ getIdentifier() + ", amount:" + getAmount() + ", targetAccountNumber:"
-//				+ getTargetAccountNumber() + ", effect:" + getEffect() + ", date:" + getDate() + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Transfer [accountNumber:" + getAccountNumber() + "comment:" + getComment() + ", identifier:" + getIdentifier() + ", amount:"
+				+ getAmount() + ", targetAccountNumber:" + getTargetAccountNumber() + ", effect:"
+				+ getEffect() + ", date:" + getDate() + "]";
+	}
 
 }

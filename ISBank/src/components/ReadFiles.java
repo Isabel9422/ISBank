@@ -7,8 +7,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 
 import java.awt.Window.Type;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -17,54 +19,57 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ReadFiles {
 
-	public static String writeFileJson(ArrayList<Flow> flows) {		
-		
-		File file = new File("src\\componentTest\\flow.json");
-		
-        if (!file.exists()) { try {
-			file.createNewFile();
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}}
-		        
-		Gson gson = new Gson();
-				
-	    String jsonString = new Gson().toJson(flows);
-        
-        return jsonString;
-	}
+	public static String readFileJson() {
 
-//	public static void readFileJson(ArrayList<Flow> flows) {
-//
-//		File file = new File("src\\componentTest\\flow.json");
-//
-//		if (!file.exists()) {
-//			try {
-//				file.createNewFile();
-//			} catch (IOException e1) {
-//				e1.printStackTrace();
-//			}
-//		}
-//
-//		Gson gson = new Gson();
-//
-//		try (Reader reader = new FileReader("C:\\Users\\isabe\\git\\repository\\ISBank\\staff.json")) {
-//
-//			// Convert JSON File to Java Object
-//			Flow transfer = gson.fromJson(reader, Flow.class);
-//
-//			// print staff
-//			System.out.println(" aqui estas : " + transfer);
-//			flows.add(transfer);
-//			System.out.println("OBJETO AÑADIDO" + flows.get(0).toString());
-//
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
+		File file = new File("src\\componentTest\\flow.json");
+		Path path = file.toPath();
+		String jsonString="";
+
+		if (!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+				
+		try {
+			jsonString= Files.readString(path);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	   return jsonString;
+
+	}
+	
+	public static String readFileXML() {
+
+		File file = new File("src\\componentTest\\flow.xml");
+		Path path = file.toPath();
+		String jsonString="";
+
+		if (!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+				
+		try {
+			jsonString= Files.readString(path);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	   return jsonString;
+
+	}
 }
