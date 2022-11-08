@@ -1,0 +1,127 @@
+<CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>1</accountNumber>
+	<client>
+		<firstname>Isabel</firstname>
+		<lastname>Serna</lastname>
+		<clientNumber>1</clientNumber>
+	</client>
+	<label>general</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>2</accountNumber>
+	<client>
+		<firstname>Isabel</firstname>
+		<lastname>Serna</lastname>
+		<clientNumber>1</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>3</accountNumber>
+	<client>
+		<firstname>Marta</firstname>
+		<lastname>Jiménez</lastname>
+		<clientNumber>2</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>4</accountNumber>
+	<client>
+		<firstname>Marta</firstname>
+		<lastname>Jiménez</lastname>
+		<clientNumber>2</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>5</accountNumber>
+	<client>
+		<firstname>Sara</firstname>
+		<lastname>García</lastname>
+		<clientNumber>3</clientNumber>
+	</client>
+	<label>general</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>6</accountNumber>
+	<client>
+		<firstname>Sara</firstname>
+		<lastname>García</lastname>
+		<clientNumber>3</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>7</accountNumber>
+	<client>
+		<firstname>Miguel</firstname>
+		<lastname>Lopez</lastname>
+		<clientNumber>4</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>8</accountNumber>
+	<client>
+		<firstname>Miguel</firstname>
+		<lastname>Lopez</lastname>
+		<clientNumber>4</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>9</accountNumber>
+	<client>
+		<firstname>Andrés</firstname>
+		<lastname>Márquez</lastname>
+		<clientNumber>5</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>10</accountNumber>
+	<client>
+		<firstname>Andrés</firstname>
+		<lastname>Márquez</lastname>
+		<clientNumber>5</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>11</accountNumber>
+	<client>
+		<firstname>Alejandro</firstname>
+		<lastname>Diaz</lastname>
+		<clientNumber>6</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>12</accountNumber>
+	<client>
+		<firstname>Alejandro</firstname>
+		<lastname>Diaz</lastname>
+		<clientNumber>6</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount><CurrentAccount>
+	<balance>0.0</balance>
+	<accountNumber>13</accountNumber>
+	<client>
+		<firstname>Martina</firstname>
+		<lastname>Romero</lastname>
+		<clientNumber>7</clientNumber>
+	</client>
+	<label>individual_tax_advantaged</label>
+</CurrentAccount><SavingsAccount>
+	<balance>0.0</balance>
+	<accountNumber>14</accountNumber>
+	<client>
+		<firstname>Martina</firstname>
+		<lastname>Romero</lastname>
+		<clientNumber>7</clientNumber>
+	</client>
+	<label>general</label>
+</SavingsAccount>

@@ -1,4 +1,4 @@
-package components;
+package mavenproject.models;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -17,6 +17,14 @@ public abstract class Account {
 		this.client = client;
 		this.balance = 0.0;
 	}
+	
+	public Account(String label, Integer accountNumber, Client client,Double balance) {
+		this.Label = label;
+		this.accountNumber = accountNumber;
+		this.client = client;
+		this.balance = balance;
+	}
+
 
 	public String getLabel() {
 		return Label;

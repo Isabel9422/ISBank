@@ -1,4 +1,4 @@
-package components;
+package mavenproject.models;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;

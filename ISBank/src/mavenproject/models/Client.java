@@ -1,4 +1,4 @@
-package components;
+package mavenproject.models;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -14,6 +14,12 @@ public class Client {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		clientNumber = count.incrementAndGet();
+	}
+	
+	public Client(String firstname, String lastname, Integer clientNumber) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.clientNumber = clientNumber;
 	}
 	
 	public String getFirstname() {
